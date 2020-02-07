@@ -7,6 +7,7 @@
             <div class="col-md-4">
                 <h1>Usuários</h1>
                 <ul class="list-group list-group-flush">
+<<<<<<< HEAD
                     <div>
                         <li class="list-group-item">
                             <p>Adm </p>
@@ -21,6 +22,15 @@
                         <p class="mt-1">camila@gmail.com</p>
                         <button type="button" class="btn btn-primary">Editar</button>
                         <button type="button" class="btn btn-danger">Excluir</button>
+=======
+                    <li class="list-group-item">
+                        <p>Adm </p>
+                        <p class="mt-1"> adm@adm.com</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p> Camila</p>
+                        <p class="mt-1">camila@gmail.com
+>>>>>>> f8a87437d1e8949fde80a3160890b9e0ce48d0e2
                     </li>
                 </ul>
             </div>
