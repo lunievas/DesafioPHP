@@ -7,13 +7,20 @@
             <div class="col-md-4">
                 <h1>Usuários</h1>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <p>Adm </p>
-                        <p class="mt-1"> adm@adm.com</p>
-                    </li>
+                    <div>
+                        <li class="list-group-item">
+                            <p>Adm </p>
+                            <p class="mt-1"> adm@adm.com</p>
+                            <button type="button" class="btn btn-primary">Editar</button>
+                            <button type="button" class="btn btn-danger">Excluir</button>
+                        </li>
+
+                    </div>
                     <li class="list-group-item">
                         <p> Camila</p>
-                        <p class="mt-1">camila@gmail.com
+                        <p class="mt-1">camila@gmail.com</p>
+                        <button type="button" class="btn btn-primary">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
                     </li>
                 </ul>
             </div>

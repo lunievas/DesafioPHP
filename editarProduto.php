@@ -4,7 +4,7 @@
 <body>
     <div class="container">
         <div class="mt-3">
-            <h1>Adicionar Produto</h1>
+            <h1>Editar Produto</h1>
 
             <form action="indexProdutos.php" method="post"></form>
                 <div class="form-row">
@@ -34,7 +34,7 @@
         </div>
 
         <div class="mt-2">
-            <button type="button" class="btn btn-primary  btn-block">Adicionar</button>
+            <button type="button" class="btn btn-warning btn-block">Adicionar</button>
         </div>
 
     </div>
