@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nome": "Luisa",
+        "email": "luisa.nievas94@gmail.com",
+        "senha": "$2y$10$y1t7e0a6a3SAP\/j6rAXXU.\/A6Mjpwoe\/EGo0BvEuZ88AaMh3hnfhq"
+    },
+    {
+        "id": 2,
+        "nome": "Luisa",
+        "email": "luisa.nievas94@gmail.com",
+        "senha": "$2y$10$BcT9MMWAYU2\/EKNGDZgG0uS6uuOhkNShPOenkF8JihmwJUYS2G0D."
+    },
+    {
+        "id": 3,
+        "nome": "Luisa",
+        "email": "luisa.nievas94@gmail.com",
+        "senha": "$2y$10$oPof2HBXs.j9eWTYZbxfQeuxRF1BJcG37G2dXNLixQcgtfZ5RWxwK"
+    },
+    {
+        "id": 4,
+        "nome": "Luisa",
+        "email": "luisa.nievas94@gmail.com",
+        "senha": "$2y$10$maE5nFe9iVKdt7yGNpYXpeh508Za8TmsppDdxc21saBQgVqOL1ZzW"
+    },
+    {
+        "id": 5,
+        "nome": "Luisa",
+        "email": "luisa.nievas94@gmail.com",
+        "senha": "$2y$10$WmudosVuMv.zv6UZlcCtau3WNSBDXbrBwX\/VWKqT3ezkfV3yE8bCC"
+    },
+    {
+        "id": 6,
+        "nome": "Luisa",
+        "email": "luisa.nievas94@gmail.com",
+        "senha": "$2y$10$7fUCcQtOhvI8TAZqqItRI.3jQwJfLJsm5jXanrEPy7nhX9VHIgBNe"
+    }
+]

@@ -7,16 +7,16 @@
             <h1>Editar Produto</h1>
 
             <form action="indexProdutos.php" method="post"></form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Nome</label>
-                        <input type="email" name="nome" class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Preço</label>
-                        <input type="password" name="preco" class="form-control" id="inputPassword4">
-                    </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Nome</label>
+                    <input type="email" name="nome" class="form-control" id="inputEmail4">
                 </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Preço</label>
+                    <input type="password" name="preco" class="form-control" id="inputPassword4">
+                </div>
+            </div>
             </form>
         </div>
 
@@ -25,7 +25,9 @@
             <textarea class="form-control" name="descricao" id="exampleFormControlTextarea1" rows="10"></textarea>
         </div>
         </form>
-
+        <div class="mt-3 mb-3">
+        <img src="images/luisacopy.jpeg" alt="foto de um macaco">
+        </div>
         <div class="input-group">
             <div class="custom-file">
                 <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
