@@ -7,11 +7,10 @@ if (isset($_POST['adicionar'])) {
     
     $array_erro = [];
 
-
     $nome = $_POST['nome'];
     if (empty($_POST['nome'])) {
 
-        $array_erro[] =  $_SESSION['vazio_nome'] = "Digite um nome";
+        $array_erro[0] =  $_SESSION['vazio_nome'] = "Digite um nome";
     } else {
         $_SESSION['value_nome'] = $_POST['nome'];
     }
@@ -19,7 +18,7 @@ if (isset($_POST['adicionar'])) {
     $email = $_POST['email'];
     if (empty($_POST['email'])) {
 
-        $array_erro[] =  $_SESSION['vazio_email'] = "Digite um email";
+        $array_erro[1] =  $_SESSION['vazio_email'] = "Digite um email";
     } else {
         $_SESSION['value_email'] = $_POST['email'];
     }
@@ -27,7 +26,7 @@ if (isset($_POST['adicionar'])) {
     $senha = $_POST['senha'];
     if(empty($_POST['senha'])){
 
-        $array_erro[] = $_SESSION['vazio_senha'] = "Tem que ter senha amadoh";
+        $array_erro[2] = $_SESSION['vazio_senha'] = "Tem que ter senha amadoh";
     }else {
         $_SESSION['value_senha'] = $_POST['senha'];
     }
@@ -36,7 +35,7 @@ if (isset($_POST['adicionar'])) {
 
 
 
-//////// ADICIONANDO NO JSON ///////////
+//////// ADICIONANDO USUARIOS NO JSON ///////////
 
 if (isset($_POST['adicionar']) and (empty($array_erro))) {
     $id = [];
@@ -138,6 +137,7 @@ if (isset($_POST['adicionar']) and (empty($array_erro))) {
                         <label for="inputPassword5">Senha</label>
                         <small id="senha" class="form-text text-muted">Mínimo 6 caracteres</small>
                         <input type="password" name="senha" id="senha" class="form-control" aria-describedby="passwordHelpBlock"
+                        minlength="6"
                         <?php
                         if (!empty($_SESSION['value_senha'])) {
                             echo "value ='" . $_SESSION['value_senha'] . "'";
