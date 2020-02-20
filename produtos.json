@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "produto": "ovo",
+        "preco": "2",
+        "imagem": "img\/ovo-1.jpg"
+    },
+    {
+        "id": 2,
+        "produto": "ovo",
+        "preco": "2",
+        "imagem": "img\/ovo-2.jpg"
+    },
+    {
+        "id": 3,
+        "produto": "ovo",
+        "preco": "2",
+        "imagem": "img\/ovo-3.jpg"
+    }
+]

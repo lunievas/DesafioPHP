@@ -18,12 +18,6 @@ if (isset($_POST['logar'])) {
     }
 };
 
-    $email = $_POST['email'];
-if(filter_var($email,FILTER_VALIDATE_EMAIL)){
-    echo "Email correto";
-}else{
-    echo"Email inválido";
-}
 
 
 ?>

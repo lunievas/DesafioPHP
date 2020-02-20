@@ -1,11 +1,18 @@
 <?php require_once('./includes/head.php'); ?>
 <?php require_once('./includes/nav.php'); ?>
 <?php
+
+
+
+
+
+
 ///////CRIANDO OS ERROS E VALIDANDO OS CAMPOS///////
 session_start();
+
+$array_erro = [];
 if (isset($_POST['adicionar'])) {
     
-    $array_erro = [];
 
     $nome = $_POST['nome'];
     if (empty($_POST['nome'])) {
@@ -37,11 +44,13 @@ if (isset($_POST['adicionar'])) {
 
 //////// ADICIONANDO USUARIOS NO JSON ///////////
 
-if (isset($_POST['adicionar']) and (empty($array_erro))) {
+if (isset($_POST['adicionar']) && (empty($array_erro)) && ($_POST['senha'] === $_POST['confsenha'])) {
+
     $id = [];
     $nome =  $_POST['nome'];
     $email = $_POST['email'];
     $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+    $confsenha = $_POST['confsenha'];
 
 
 
@@ -66,7 +75,21 @@ if (isset($_POST['adicionar']) and (empty($array_erro))) {
     $listadeu = json_decode($lista1,true);
 
 
-    // var_dump($listadeu);
+
+///////////EDITAR USUARIOS///////////
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ?>
@@ -84,10 +107,10 @@ if (isset($_POST['adicionar']) and (empty($array_erro))) {
                         <li class="list-group-item">
                             <p> <?php echo $lista['nome']?></p>
                             <p class="mt-1"><?php echo $lista ['email']?></p>
-                            <a href="editarUsuario.php">
-                                <button type="button" class="btn btn-primary">Editar</button>
-                            </a>
+                        
+                            <a href="editarUsuario.php?id=<?php echo $lista['id']?>" type="button" class="btn btn-primary"> Editar</a>
                             <button type="button" class="btn btn-danger">Excluir</button>
+                            
                         </li>
                         <?php }; ?>
 

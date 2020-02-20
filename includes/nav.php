@@ -14,13 +14,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+          <a class="nav-link" href="indexProdutos.php">Home <span class="sr-only">(Página atual)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Adicionar produto</a>
+          <a class="nav-link" href="createProduto.php">Adicionar produto</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Usuário</a>
+          <a class="nav-link" href="createUsuario.php">Usuário</a>
         </li>
       </ul>
     </div>
