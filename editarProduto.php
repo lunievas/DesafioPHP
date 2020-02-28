@@ -17,6 +17,8 @@ if (isset($_GET['id'])) {
     $posicao = array_search($_GET['id'], array_column($listaDeProdutos, 'id'));
 }
 
+
+
 ///////VALIDAÇÕES/////
 
 if (isset($_POST['editar'])) {
@@ -85,7 +87,7 @@ if (isset($_POST['editar'])) {
         <div class="mt-3">
             <h1>Editar Produto</h1>
 
-            <form action="" method="post">
+            <form action="" method="post" enctype="multipart/form-data">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputEmail4">Nome</label>
@@ -105,10 +107,14 @@ if (isset($_POST['editar'])) {
             </textarea>
         </div>
 
+        <div class="mb-3">
+        <img src="<?php echo $listaDeProdutos[$posicao]['imagem']?>" alt="">
+        </div>
 
         <div class="input-group">
             <div class="custom-file">
-                <input type="file" class="custom-file-input" name="imagem" id="inputGroupFile04"" >
+                <input type="file" class="custom-file-input" name="imagem" id="inputGroupFile04">
+                
                 <label class="custom-file-label" for="inputGroupFile04">Selecione a foto</label>
             </div>
         </div>

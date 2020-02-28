@@ -52,6 +52,9 @@ if (isset($_POST['adicionar']) and (empty($array_erros))) {
 
     ];
 
+
+    /////ADICIONANDO IMAGEM/////////////////////
+
     $info = pathinfo($_FILES['imagem']['name']);
     $extension = $info['extension'];
     $nome_img = $img_name = $info['filename'] . "-" . $produtos['id'] . "." . $extension;
