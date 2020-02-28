@@ -1,20 +1,36 @@
 [
     {
-        "id": 1,
-        "produto": "ovo",
-        "preco": "2",
-        "imagem": "img\/ovo-1.jpg"
-    },
-    {
         "id": 2,
-        "produto": "ovo",
-        "preco": "2",
-        "imagem": "img\/ovo-2.jpg"
+        "produto": "Ovo de codorna",
+        "preco": "10",
+        "descricao": "Ovo de codorna pra comer como petisco tomando uma cervejinha",
+        "imagem": "img\/ovos-de-codorna-2.jpg"
     },
     {
         "id": 3,
-        "produto": "ovo",
-        "preco": "2",
-        "imagem": "img\/ovo-3.jpg"
+        "produto": "Ovo de pata",
+        "preco": "30",
+        "descricao": "Ovo de pata pra comer de qualquer jeito",
+        "imagem": "img\/ovo-de-pata-3.jpg"
+    },
+    {
+        "id": 4,
+        "produto": "Ovo branco  ",
+        "preco": "5",
+        "descricao": "Ovo branco normal mesmo pra comer frito ou cozido",
+        "imagem": "img\/ovo_branco_30_unidades-4.jpg"
+    },
+    {
+        "id": 5,
+        "produto": "Ovo Caipira",
+        "preco": "7",
+        "descricao": "Ovo caipira de qualidade",
+        "imagem": "img\/ovo-5.jpg"
+    },
+    {
+        "id": 6,
+        "produto": "Coco verde",
+        "preco": "9.00",
+        "descricao": "Coco verde gelado "
     }
 ]

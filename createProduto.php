@@ -37,6 +37,7 @@ if (isset($_POST['adicionar']) and (empty($array_erros))) {
     $id = [];
     $produto = $_POST['produto'];
     $preco = $_POST['preco'];
+    $descricao = $_POST['descricao'];
     $imagem = $_FILES['imagem']['tmp_name'];
 
     $lista = file_get_contents('produtos.json'); ///pegando os arquivos do json///
@@ -47,6 +48,7 @@ if (isset($_POST['adicionar']) and (empty($array_erros))) {
         "id" => count($listaDeP) + 1,
         "produto" => $produto,         ///adicionando na lista de usuarios///
         "preco" => $preco,
+        "descricao" => $descricao
 
     ];
 
@@ -71,14 +73,6 @@ if (isset($_POST['adicionar']) and (empty($array_erros))) {
         move_uploaded_file($_FILES['imagem']['tmp_name'], 'img/' . $nome_img);
     }
 }
-
-
-
-
-
-
-
-
 
 
 

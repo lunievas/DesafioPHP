@@ -5,46 +5,36 @@
 
 
 
-
-
 ///////CRIANDO OS ERROS E VALIDANDO OS CAMPOS///////
 session_start();
 
 $array_erro = [];
 if (isset($_POST['adicionar'])) {
-    
 
     $nome = $_POST['nome'];
     if (empty($_POST['nome'])) {
 
         $array_erro[0] =  $_SESSION['vazio_nome'] = "Digite um nome";
-    } else {
-        $_SESSION['value_nome'] = $_POST['nome'];
-    }
+    } 
 
     $email = $_POST['email'];
     if (empty($_POST['email'])) {
 
         $array_erro[1] =  $_SESSION['vazio_email'] = "Digite um email";
-    } else {
-        $_SESSION['value_email'] = $_POST['email'];
-    }
+    } 
 
     $senha = $_POST['senha'];
     if(empty($_POST['senha'])){
 
         $array_erro[2] = $_SESSION['vazio_senha'] = "Tem que ter senha amadoh";
-    }else {
-        $_SESSION['value_senha'] = $_POST['senha'];
     }
-
 };
 
 
 
 //////// ADICIONANDO USUARIOS NO JSON ///////////
 
-if (isset($_POST['adicionar']) && (empty($array_erro)) && ($_POST['senha'] === $_POST['confsenha'])) {
+if (isset($_POST['adicionar']) && (empty($array_erro)) && ($_POST['senha'] === ($_POST['confsenha']))) {
 
     $id = [];
     $nome =  $_POST['nome'];
@@ -73,21 +63,6 @@ if (isset($_POST['adicionar']) && (empty($array_erro)) && ($_POST['senha'] === $
   
     $lista1 = file_get_contents('usuarios.json');
     $listadeu = json_decode($lista1,true);
-
-
-
-///////////EDITAR USUARIOS///////////
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -123,14 +98,7 @@ if (isset($_POST['adicionar']) && (empty($array_erro)) && ($_POST['senha'] === $
                 <form action="" method="POST">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nome</label>
-                        <input type="text" name="nome" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="" 
-                        <?php
-                        if (!empty($_SESSION['value_nome'])) {
-                            echo "value ='" . $_SESSION['value_nome'] . "'";
-                            unset($_SESSION['value_nome']);
-                        }
-                        ?>>
-                                                                                                                                    
+                        <input type="text" name="nome" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="">
                         <small id="emailHelp" class="form-text text-muted"></small>
                         <?php
                         if (!empty($_SESSION['vazio_nome'])) {
@@ -141,13 +109,7 @@ if (isset($_POST['adicionar']) && (empty($array_erro)) && ($_POST['senha'] === $
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">E-mail</label>
-                    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder=""
-                     <?php
-                        if (!empty($_SESSION['value_email'])) {
-                            echo "value ='" . $_SESSION['value_email'] . "'";
-                            unset($_SESSION['value_email']);
-                        }
-                        ?>>
+                    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="">
                         <small id="emailHelp" class="form-text text-muted"></small>
                         <?php
                         if (!empty($_SESSION['vazio_email'])) {
@@ -160,13 +122,7 @@ if (isset($_POST['adicionar']) && (empty($array_erro)) && ($_POST['senha'] === $
                         <label for="inputPassword5">Senha</label>
                         <small id="senha" class="form-text text-muted">Mínimo 6 caracteres</small>
                         <input type="password" name="senha" id="senha" class="form-control" aria-describedby="passwordHelpBlock"
-                        minlength="6"
-                        <?php
-                        if (!empty($_SESSION['value_senha'])) {
-                            echo "value ='" . $_SESSION['value_senha'] . "'";
-                            unset($_SESSION['value_senha']);
-                        }
-                        ?>>
+                        minlength="6">
                         <small id="emailHelp" class="form-text text-muted"></small>
                         <?php
                         if (!empty($_SESSION['vazio_senha'])) {

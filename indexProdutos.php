@@ -3,6 +3,16 @@
 <?php require_once('includes/head.php'); ?>
 <?php require_once('./includes/nav.php'); ?>
 
+<?php
+   $lista =  file_get_contents('produtos.json');
+
+    $listaDeProdutos = json_decode($lista,true);
+
+
+
+
+?>
+
 <body>
 
   <div class="container mt-4">
@@ -19,15 +29,19 @@
         </tr>
       </thead>
       <tbody>
+        <?php foreach($listaDeProdutos as $lista){;?>
         <tr>
-          <th scope="row">1</th>
-          <td>Produto 1</td>
-          <td>Descrição produto 1</td>
-          <td>R$ 15</td>
-          <td><button type="button" class="btn btn-primary">Editar</button>
-            <button type="button" class="btn btn-danger">Excluir</button>
-          </td>
-        </tr>
+          <div>
+          <th scope="row"><?php echo $lista['id']?></th>
+          <td><?php echo $lista['produto'] ?></td>
+          <td> <?php echo $lista['descricao'] ?></td>
+          <td><?php echo $lista['preco'] ?></td>
+          </div>
+          <td><a href="editarProduto.php?id=<?php echo $lista['id']?>" type="button" class="btn btn-primary">Editar</a>
+          <button type="button" class="btn btn-danger">Excluir</button>
+        </td>
+      </tr>
+      <?php };?>
 
 
       </tbody>

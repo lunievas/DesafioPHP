@@ -24,7 +24,6 @@ if(isset($_GET['id'])){
 
 if(isset($_POST['edit'])){
 
-    print_r(empty($array_erro));
 
     $nome = $_POST['nome'];
     if (empty($_POST['nome'])) {
@@ -42,15 +41,8 @@ if(isset($_POST['edit'])){
         $_SESSION['value_email'] = $_POST['email'];
     }
 
-    $senha = $_POST['senha'];
-    if(empty($_POST['senha'])){
 
-        $array_erro[2] = $_SESSION['vazio_senha'] = "Tem que ter senha amadoh";
-    }else {
-        $_SESSION['value_senha'] = $_POST['senha'];
-    }
-
-    //if (empty($array_erro) && ($_POST['senha'] == $_POST['confsenha'])){
+    if (isset($_POST['edit']) && (empty($array_erro)) ){
 
         $dadosEditados = [
             "id" => $listaDeUser[$posicao]['id'],
@@ -64,7 +56,6 @@ if(isset($_POST['edit'])){
              $dadosEditados ['senha'] = $_POST['senha'];
         }
 
-        print_r($dadosEditados);
 
         $listaDeUser[$posicao] = $dadosEditados;
 
@@ -75,7 +66,7 @@ if(isset($_POST['edit'])){
 
 
 
-   // }
+    }
 }
 
 

@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "nome": "teste46",
-        "email": "teste45@gmail.com",
+        "nome": "testeNome",
+        "email": "testeNome@gmail.com",
         "senha": "$2y$10$r304ZEzSMnlJ9grmzYV6fOlCdl5yxghkN2MxcET1b9pPx1goCpkgu"
     },
     {
@@ -16,5 +16,11 @@
         "nome": "teste3",
         "email": "teste3@gmail.com",
         "senha": "$2y$10$B9OUzBI6vQ4XNp0qT9yp9uNWANLlLFMm285JfYpXeHiiCcvbd1FAO"
+    },
+    {
+        "id": 4,
+        "nome": "teste6",
+        "email": "teste6@gmail.com",
+        "senha": "$2y$10$\/1dHpFWUKtLzLTX3l.ISEuBzQ9qVnNw8v8bNwCpVe\/cysdY9eb1Fe"
     }
 ]
